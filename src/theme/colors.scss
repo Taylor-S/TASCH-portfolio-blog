@@ -1,0 +1,22 @@
+:root {
+    --color-primary: #413f54;
+    --color-prinary-shade: #21202a;
+    --color-prinary-tint: #a09faa;
+
+    --color-accent-red: #d5573b;
+    --color-accent-red-shade: #6b2c1e;
+    --color-accent-red-tint: #eaab9d;
+
+    --color-accent-yellow: #ffbe0b;
+    --color-accent-yellow-shade: #805f06;
+    --color-accent-yellow-tint: #ffdf85;
+
+    --color-background-neutral: #f0f9f6;
+
+    --color-background: #c2e7da;
+
+}
+
+a {
+    color: var(--color-accent-red);
+}

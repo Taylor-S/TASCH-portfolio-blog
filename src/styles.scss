@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    font-size: 16px;
+}
+
+@import "theme/colors.scss";
+@import "theme/fonts.scss";
+@import "theme/layout.scss";
