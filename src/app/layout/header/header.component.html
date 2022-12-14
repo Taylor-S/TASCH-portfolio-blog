@@ -1,4 +1,4 @@
-<nav>
+<nav [ngClass]="hamburgerMenuOpen ? 'menuOpen' : 'menuClosed'">
     <div class="nav-container">
         <a [routerLink]="['/']" (click)="toggleBurgerMenu(false)">
             <img src="../../../assets/images/Logo-no-name-export.png" alt="The TASCH logo">

@@ -5,6 +5,11 @@ nav {
     width: 100vw;
     max-width: 100%;
     z-index: 3;
+    transition: background-color 0.3s ease-out;
+
+    &.menuOpen {
+        background-color: transparent;
+    }
 }
 
 .nav-container {
@@ -54,7 +59,6 @@ nav {
     display: none;
 }
 
-
 @media screen and (max-width: 500px) {
     .nav-container {
         img {
@@ -78,9 +82,17 @@ nav {
         }
     }
 
+    nav.menuOpen {
+        .hamburger-container {
+            .hamburger-dash {
+                background-color: var(--color-background-neutral);
+            }
+        }
+    }
+
     .hamburger-menu {
         display: block;
-        background-color: var(--color-background);
+        background-color: var(--color-primary);
         position: fixed;
         z-index: 2;
         top: 0;
@@ -100,20 +112,20 @@ nav {
         li {
             padding: 4rem;
             text-align: center;
-    
+
             a {
                 text-decoration: none;
                 font-weight: bold;
                 font-size: 2.5rem;
-                color: var(--color-primary);
+                color: var(--color-background-neutral);
                 transition: all 0.5s ease;
                 border-bottom: 3px solid transparent;
             }
-    
+
             a:hover {
                 color: var(--color-prinary-shade);
                 border-color: var(--color-prinary-shade);
             }
         }
     }
-  }
+}
