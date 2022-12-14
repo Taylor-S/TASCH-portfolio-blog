@@ -4,6 +4,7 @@ nav {
     background-color: var(--color-background);
     width: 100vw;
     max-width: 100%;
+    z-index: 1;
 }
 
 .nav-container {
@@ -43,4 +44,75 @@ nav {
             border-color: var(--color-prinary-shade);
         }
     }
+
+    .hamburger-container {
+        display: none;
+    }
 }
+
+.hamburger-menu {
+    display: none;
+}
+
+
+@media screen and (max-width: 500px) {
+    .nav-container {
+        img {
+            height: 1.5rem;
+        }
+
+        ul {
+            display: none;
+        }
+
+        .hamburger-container {
+            display: block;
+
+            .hamburger-dash {
+                width: 1.63rem;
+                height: 0.25rem;
+                background-color: var(--color-primary);
+                border-radius: 15px;
+                margin: 0.25rem 0;
+            }
+        }
+    }
+
+    .hamburger-menu {
+        display: block;
+        background-color: var(--color-background);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        li {
+            padding: 4rem;
+            text-align: center;
+    
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 2.5rem;
+                color: var(--color-primary);
+                transition: all 0.5s ease;
+                border-bottom: 3px solid transparent;
+            }
+    
+            a:hover {
+                color: var(--color-prinary-shade);
+                border-color: var(--color-prinary-shade);
+            }
+        }
+    }
+  }
