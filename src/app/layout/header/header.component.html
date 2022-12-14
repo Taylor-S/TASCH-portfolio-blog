@@ -1,6 +1,6 @@
 <nav>
     <div class="nav-container">
-        <a [routerLink]="['/']" (click)="hamburgerMenuOpen = false">
+        <a [routerLink]="['/']" (click)="toggleBurgerMenu(false)">
             <img src="../../../assets/images/Logo-no-name-export.png" alt="The TASCH logo">
         </a>
 
@@ -10,7 +10,7 @@
             <li><a [routerLink]="['/']" fragment="contact">Contact</a></li>
         </ul>
 
-        <div class="hamburger-container" (click)="hamburgerMenuOpen = !hamburgerMenuOpen">
+        <div class="hamburger-container" (click)="toggleBurgerMenu(!hamburgerMenuOpen)">
             <div [@burgerMenuTop]="hamburgerMenuOpen ? 'menuOpen' : 'menuClosed'" class="hamburger-dash"></div>
             <div [@burgerMenuMiddle]="hamburgerMenuOpen ? 'menuOpen' : 'menuClosed'" class="hamburger-dash"></div>
             <div [@burgerMenuBottom]="hamburgerMenuOpen ? 'menuOpen' : 'menuClosed'" class="hamburger-dash"></div>
@@ -20,8 +20,8 @@
 
 <div class="hamburger-menu" @fadeInOut *ngIf="hamburgerMenuOpen">
     <ul>
-        <li><a [routerLink]="['/']" fragment="about" (click)="hamburgerMenuOpen = false">About</a></li>
-        <li><a [routerLink]="['/']" fragment="work" (click)="hamburgerMenuOpen = false">Work</a></li>
-        <li><a [routerLink]="['/']" fragment="contact" (click)="hamburgerMenuOpen = false">Contact</a></li>
+        <li><a [routerLink]="['/']" fragment="about" (click)="toggleBurgerMenu(false)">About</a></li>
+        <li><a [routerLink]="['/']" fragment="work" (click)="toggleBurgerMenu(false)">Work</a></li>
+        <li><a [routerLink]="['/']" fragment="contact" (click)="toggleBurgerMenu(false)">Contact</a></li>
     </ul>
 </div>

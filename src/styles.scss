@@ -11,6 +11,10 @@ body {
     font-size: 16px;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 @import "theme/colors.scss";
 @import "theme/fonts.scss";
 @import "theme/buttons.scss";
