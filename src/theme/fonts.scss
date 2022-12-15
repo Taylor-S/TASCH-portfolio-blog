@@ -23,6 +23,14 @@ h1.caveat-font {
     font-size: 3rem;
 }
 
+.bold {
+    font-weight: 700;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
 @media (min-width: 768px) {
     h1.caveat-font {
         font-size: 6rem;
