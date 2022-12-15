@@ -30,7 +30,7 @@ export class LayoutModule {
   }
 
   scrollToAnchor() {
-    this.viewportScroller.setOffset([0, 60]);
+    this.viewportScroller.setOffset([0, 30]);
     this.router.events.pipe(filter(e => e instanceof NavigationEnd)).subscribe((event) => {
       const navEnd = event as unknown as NavigationEnd;
       const url = navEnd.urlAfterRedirects;
