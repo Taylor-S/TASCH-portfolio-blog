@@ -30,14 +30,28 @@
 <section id="about">
     <div class="container">
         <div>
-            <p>As a web developer with a keen interest in User Experience. I understand that exceptional interfaces should not only look good, they should work even better.</p>
-            <p class="caveat-font">I use code to create engaging, easy to follow online experiences for the end user.</p>
+            <p>As a web developer with a keen interest in User Experience. I understand that exceptional interfaces
+                should not only look good, they should work even better.</p>
+            <p class="caveat-font">I use code to create engaging, easy to follow online experiences for the end user.
+            </p>
         </div>
         <img class="portfolio-image" src="../../assets/images/portfolio-image.png" alt="Taylor's portfolio image.">
     </div>
 </section>
 
 <section id="work">
-    Work
-    <a [routerLink]="['/project']">View Project</a>
+    <div class="container">
+        <h1 class="caveat-font">Work -</h1>
+        <div class="projects-container">
+            <div class="mobile-images">
+                <a class="otc-tile" [routerLink]="'/project'"><img src="../../assets/images/OTC_Tile_Mobile.png" alt=""></a>
+                <a class="wirely-tile" [routerLink]="'/project'"><img src="../../assets/images/Wirely_Tile.png" alt=""></a>
+                <a class="pomodoro-tile" [routerLink]="'/project'"><img src="../../assets/images/Pomodoro_Timer_Tile.png" alt=""></a>
+            </div>
+            <div class="desktop-images">
+                <a class="otc-tile" [routerLink]="'/project'"><img src="../../assets/images/OTC_Tile.png" alt=""></a>
+                <a class="wirely-tile tile-left" [routerLink]="'/project'"><img src="../../assets/images/Wirely_Tile_desktop.png" alt=""></a>
+                <a class="pomodoro-tile tile-right" [routerLink]="'/project'"><img src="../../assets/images/Pomodoro_Timer_Tile_desktop.png" alt=""></a></div>
+        </div>
+    </div>
 </section>

@@ -3,10 +3,28 @@
     --quicksand-font: "Quicksand", sans-serif;
 }
 
-h1, h2, h3, h4, h5, p, a {
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
     font-family: var(--quicksand-font);
+    margin: 0;
+    padding: 0;
 }
 
 .caveat-font {
     font-family: var(--caveat-font);
+}
+
+h1.caveat-font {
+    font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+    h1.caveat-font {
+        font-size: 6rem;
+    }
 }

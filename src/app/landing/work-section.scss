@@ -1,0 +1,58 @@
+#work {
+    h1 {
+        margin-bottom: 1.5rem;
+    }
+    .projects-container {
+
+        .desktop-images {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            padding: 0.25rem 0;
+            transition: transform 0.3s ease-out;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #work {
+        h1 {
+            margin-bottom: 5rem;
+        }
+        .projects-container {
+            .mobile-images {
+                display: none;
+            }
+            .desktop-images {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            .wirely-tile,
+            .pomodoro-tile {
+                width: 49%;
+            }
+
+            .tile-left, .tile-right {
+                img {
+                    padding-top: 1rem;
+                }
+            }
+
+            // .tile-left {
+            //     margin-right: 0.5rem;
+            // }
+
+            // .tile-right {
+            //     margin-left: 0.5rem;
+            // }
+        }
+    }
+}
