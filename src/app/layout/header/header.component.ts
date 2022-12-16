@@ -14,13 +14,13 @@ import { fadeInOut } from 'src/app/animations/fade-animation';
 export class HeaderComponent {
   hamburgerMenuOpen = false;
 
-  constructor(private renderer: Renderer2){}
+  constructor(private renderer: Renderer2) { }
 
   toggleBurgerMenu(isOpen: boolean) {
-    
+
     this.hamburgerMenuOpen = isOpen;
 
-    if(isOpen) {
+    if (isOpen) {
       this.renderer.addClass(document.body, 'no-scroll');
     } else {
       this.renderer.removeClass(document.body, 'no-scroll');
