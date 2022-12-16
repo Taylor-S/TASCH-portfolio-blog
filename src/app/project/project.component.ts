@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProjectNames } from './project-models';
 import { projectTemplates } from './project-templates/project-templates';
@@ -6,7 +6,8 @@ import { projectTemplates } from './project-templates/project-templates';
 @Component({
   selector: 'app-project',
   templateUrl: './project.component.html',
-  styleUrls: ['./project.component.scss']
+  styleUrls: ['./project.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class ProjectComponent {
   @ViewChild("ref", { read: ElementRef }) tref: ElementRef = {} as ElementRef;

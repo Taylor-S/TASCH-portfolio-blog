@@ -9,7 +9,9 @@ h3,
 h4,
 h5,
 p,
-a {
+a,
+li,
+ol {
     font-family: var(--quicksand-font);
     margin: 0;
     padding: 0;
@@ -21,6 +23,14 @@ a {
 
 h1.caveat-font {
     font-size: 3rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 .bold {
