@@ -13,26 +13,14 @@ export class ProjectComponent {
   projectName: ProjectNames | null = null;
   noProjectMessage: string | null = null;
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.determineProjectName();
   }
 
   ngAfterViewInit() {
-    switch (this.projectName) {
-      case ProjectNames.OnTrackChat:
-        this.tref.nativeElement.innerHTML = projectTemplates.onTrackChat;
-        break;
-      case ProjectNames.Wirely:
-        this.tref.nativeElement.innerHTML = projectTemplates.wirely;
-        break;
-      case ProjectNames.Pomodoro:
-        this.tref.nativeElement.innerHTML = projectTemplates.pomodoro;
-        break;
-      default:
-        break;
-    }
+    this.renderProjectTemplate();
   }
 
   determineProjectName() {
@@ -58,5 +46,22 @@ export class ProjectComponent {
         this.noProjectMessage = 'No project was specified.';
       }
     });
+  }
+
+  renderProjectTemplate() {
+    switch (this.projectName) {
+      case ProjectNames.OnTrackChat:
+        this.tref.nativeElement.innerHTML = projectTemplates.onTrackChat;
+        break;
+      case ProjectNames.Wirely:
+        this.tref.nativeElement.innerHTML = projectTemplates.wirely;
+        break;
+      case ProjectNames.Pomodoro:
+        this.tref.nativeElement.innerHTML = projectTemplates.pomodoro;
+        break;
+      default:
+        this.tref.nativeElement.innerHTML = ''
+        break;
+    }
   }
 }
