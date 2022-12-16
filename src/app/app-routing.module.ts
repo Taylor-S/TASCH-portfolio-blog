@@ -9,7 +9,7 @@ export const routes: Routes = [
     component: LandingComponent
   },
   {
-    path:'project',
+    path:'project/:name',
     component: ProjectComponent
   }
 ];
