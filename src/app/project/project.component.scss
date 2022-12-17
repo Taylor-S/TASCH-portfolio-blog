@@ -5,6 +5,17 @@ section {
         width: 100%;
     }
 
+    figure {
+        padding-top: 1rem;
+        text-align: center;
+
+        figcaption {
+            font-family: var(--quicksand-font);
+            color: #5C5C5C;
+            font-size: 0.75rem;
+        }
+    }
+
     ul {
         margin: 0;
         padding: 0;
@@ -68,5 +79,12 @@ section {
 
 #testimonial {
     background-color: var(--color-primary);
-    color: var(--color-accent-yellow)
+    color: var(--color-accent-yellow);
+    padding-bottom: 0.5rem;
+
+    p.caveat-font {
+        font-size: 1.5rem;
+        max-width: 60rem;
+        margin: 0.5rem auto auto;
+    }
 }
