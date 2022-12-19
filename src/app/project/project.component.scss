@@ -1,8 +1,12 @@
+@import './project-templates/styles/wirely.scss';
+
 section {
     padding: 2.5rem 0;
 
     img {
         width: 100%;
+        margin: 0 auto;
+        max-width: 62.5rem;
     }
 
     figure {
@@ -34,6 +38,36 @@ section {
         font-size: 3rem;
         text-align: center;
         padding-bottom: 1.5rem;
+    }
+}
+
+#project-overview {
+    @media (min-width: 768px) {
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .text-container {
+            width: 70%;
+        }
+
+        .overviewInfo {
+            width: 16.66%;
+        }
+    }
+}
+
+#testimonial {
+    background-color: var(--color-primary);
+    color: var(--color-accent-yellow);
+    padding-bottom: 0.5rem;
+
+    p.caveat-font {
+        font-size: 1.5rem;
+        max-width: 60rem;
+        margin: 0.5rem auto auto;
     }
 }
 
@@ -74,18 +108,31 @@ section {
 
         &.desktop {
             display: block;
+
+            .column {
+                padding: 0;
+            }
         }
     }
 }
 
-#testimonial {
-    background-color: var(--color-primary);
-    color: var(--color-accent-yellow);
-    padding-bottom: 0.5rem;
+.mobile-image {
+    display: block;
+}
 
-    p.caveat-font {
-        font-size: 1.5rem;
-        max-width: 60rem;
-        margin: 0.5rem auto auto;
+.desktop-image {
+    display: none;
+}
+
+@media (min-width: 500px) {
+    section {
+        padding: 8rem 0;
+    }
+    .mobile-image {
+        display: none;
+    }
+    
+    .desktop-image {
+        display: block;
     }
 }
