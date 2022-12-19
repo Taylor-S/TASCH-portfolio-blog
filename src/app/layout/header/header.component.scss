@@ -59,6 +59,36 @@ nav {
     display: none;
 }
 
+.scroll-top-button {
+    /* Style the button as a circle */
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    border: 0;
+    background-color: var(--color-accent-red);
+    opacity: 0.5;
+    z-index: 3;
+  
+    /* Position the button in the bottom right corner of the screen */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  
+    /* Add some hover effects */
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  
+    &:hover {
+        background-color: var(--color-accent-red-shade);
+        opacity: 1;
+    }
+  
+    /* Style the chevron icon */
+  .chevron {
+    color: var(--color-background-neutral);
+  }
+  }
+
 @media screen and (max-width: 500px) {
     .nav-container {
         img {

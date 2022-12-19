@@ -25,3 +25,7 @@
         <li><a [routerLink]="['/']" fragment="contact" (click)="toggleBurgerMenu(false)">Contact</a></li>
     </ul>
 </div>
+
+<button *ngIf="showScrollButton" class="scroll-top-button" (click)="scrollToTop()">
+    <span class="chevron">&#x25B2; <br> Top</span>
+</button>

@@ -7,7 +7,7 @@ describe('HeaderComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ HeaderComponent ],
+      declarations: [HeaderComponent],
     });
 
     fixture = TestBed.createComponent(HeaderComponent);
@@ -47,4 +47,5 @@ describe('HeaderComponent', () => {
     component.toggleBurgerMenu(false);
     expect((component as any).renderer.removeClass).toHaveBeenCalledWith(document.body, 'no-scroll');
   });
+
 });
