@@ -1,47 +1,47 @@
-#project-overview {
-
-    @media (min-width: 768px) {
-        .desktop-image {
-            margin-top: -10rem;
-        }
-    }
-}
-
-#project-approach {
-    @media (min-width: 500px) {
-        .desktop-image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .design-iterations {
-            img {
-                margin-left: 1.8%;
+#project-component {
+    #project-overview {
+        @media (min-width: 768px) {
+            .desktop-image {
+                margin-top: -10rem;
             }
         }
     }
-}
 
-#project-challenges {
-    .desktop-image {
-        min-width: 10rem;
+    #project-approach {
+        @media (min-width: 500px) {
+            .desktop-image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
-    }
-    @media (min-width: 500px) {
-        .desktop-image {
-            float: left;
-            max-width: 20%;
-            padding-right: 1rem;
-            padding-bottom: 1rem;
+            .design-iterations {
+                img {
+                    margin-left: 1.8%;
+                }
+            }
         }
     }
 
-    @media (min-width: 1000px) {
+    #project-challenges {
         .desktop-image {
-            float: left;
-            max-width: 15%;
-            padding-right: 1rem;
+            min-width: 10rem;
+        }
+        @media (min-width: 500px) {
+            .desktop-image {
+                float: left;
+                max-width: 20%;
+                padding-right: 1rem;
+                padding-bottom: 1rem;
+            }
+        }
+
+        @media (min-width: 1000px) {
+            .desktop-image {
+                float: left;
+                max-width: 15%;
+                padding-right: 1rem;
+            }
         }
     }
 }
