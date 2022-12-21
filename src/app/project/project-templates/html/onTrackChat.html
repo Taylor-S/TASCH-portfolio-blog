@@ -1,18 +1,152 @@
-<section id="project-hero">
-    <div class="container">
-        <img class="mobile-image" src="../../../../assets/images/otc-showcase-hero-mobile.png" alt="OnTrackChat project image showcase">
-        <img class="desktop-image" src="../../../../assets/images/otc-showcase-hero-desktop.png" alt="OnTrackChat project image showcase">
-        <h1 class="project-title">OnTrackChat</h1>
-    </div>
-</section>
+<div class="ontrackchat">
+    <section id="project-hero">
+        <div class="container">
+            <img src="../assets/images/otc-showcase-hero.png" alt="OnTrackChat image showcase">
+            <h1 class="project-title">OnTrackChat</h1>
 
-<section id="project-overview" class="mb-4">
-    <div class="container">
-        <div class="text-container">
-            <h2>A case study coming soon!</h2>
-            <p>
-                Still working on this one... &#128513
-            </p>
+            <div class="overviewInfo mobile">
+                <div class="column left">
+                    <p class="bold">INDUSTRY</p>
+                    <ul>
+                        <li>Education</li>
+                        <li>Well Being</li>
+                    </ul>
+
+                    <p class="bold">INVOLVEMENT</p>
+                    <ul>
+                        <li>Software Development</li>
+                        <li>Founder</li>
+                    </ul>
+                </div>
+
+                <div class="column right">
+                    <p class="bold">TECHNOLOGIES</p>
+                    <ul>
+                        <li>AWS</li>
+                        <li>Angular</li>
+                        <li>Progressiv Web App</li>
+                        <li>Node JS</li>
+                        <li>MongoDB</li>
+                        <li>AWS Amplify</li>
+                        <li>GraphQL</li>
+                    </ul>
+
+                    <p class="bold">Visit</p>
+                    <ul>
+                        <li>
+                            <a href="https://ontrackchat.com" target="_blank"
+                                rel="noopener noreferrer">ontrackchat.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <section id="project-overview">
+        <div class="container">
+            <div class="text-container">
+                <h2>Overview</h2>
+                <p>In 2020, I partnered with a friend to develop OnTrackChat, a student well-being app aimed at
+                    improving student engagement and accountability in primary schools. Utilising AWS, I was able to
+                    create a minimum viable product (MVP) using Angular and PWA technology.</p>
+            </div>
+
+            <div class="overviewInfo desktop">
+                <div class="column left">
+                    <p class="bold">INDUSTRY</p>
+                    <ul>
+                        <li>Education</li>
+                        <li>Well Being</li>
+                    </ul>
+
+                    <p class="bold">INVOLVEMENT</p>
+                    <ul>
+                        <li>Software Development</li>
+                        <li>Founder</li>
+                    </ul>
+                </div>
+
+                <div class="column right">
+                    <p class="bold">TECHNOLOGIES</p>
+                    <ul>
+                        <li>AWS</li>
+                        <li>Angular</li>
+                        <li>Node JS</li>
+                        <li>MongoDB</li>
+                        <li>AWS Amplify</li>
+                        <li>GraphQL</li>
+                    </ul>
+
+                    <p class="bold">Visit</p>
+                    <ul>
+                        <li>
+                            <a href="https://ontrackchat.com" target="_blank"
+                                rel="noopener noreferrer">ontrackchat.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <figure class="overview-image-1">
+                <img src="../../../../assets/images/otc-showcase-overview.png" alt="Adding a student.">
+            </figure>
+        </div>
+        <figure class="backround-primary pb-2">
+            <img src="../../../../assets/images/otc-showcase-overview-2.png" alt="Let's chat - student turn">
+        </figure>
+        <figure>
+            <img class="pt-1" src="../../../../assets/images/otc-showcase-overview-3.png"
+                alt="Let's chat - teacher turn">
+            <figcaption class="pt-1">OnTrackChat, a progressive web app promoting student engagement and
+                self-accountability.</figcaption>
+        </figure>
+    </section>
+
+
+
+    <section id="project-approach">
+        <div class="container">
+            <div class="text-container">
+                <h2>The Approach</h2>
+                <p>To engage students and teachers in a fun and interactive way, we focused on honest face-to-face
+                    communication. We developed a rough sketch of our ideas and tested it with potential users who
+                    closely resembled our target audience. Based on the feedback we received on our core feature, I
+                    built the MVP.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="project-challenges">
+        <div class="container">
+            <div class="text-container">
+                <h2>Challenges</h2>
+                <p class="bold pt-0-5">First time building an application as the sole developer</p>
+                <p>As a full stack developer with several years of experience, I had previously always worked on
+                    applications as part of a team. This project presented a new challenge as it was my first time
+                    building a larger application solo and architecting the entire app. Initially, the app's
+                    architecture included hosting on a virtual private server (VPS) and deploying our code using a
+                    continuous integration/continuous deployment (CI/CD) pipeline created with GitHub Actions. The
+                    backend application, built with Node.js, connected to a MongoDB database and handled authentication
+                    and other tasks. The frontend Angular application communicated with the Node.js application.</p>
+
+
+                <p class="bold pt-0-5">A change in plans</p>
+                <p>Unfortunately, due to unforeseen circumstances, I ended up taking full ownership of OnTrackChat and
+                    had to migrate the codebase to my own resources. Rather than maintaining a server, I chose to move
+                    the application to AWS Amplify, a platform that was new to me. This involved learning about
+                    serverless applications and GraphQL, which presented additional learning curves. Despite these
+                    challenges, I was able to successfully migrate the app and continue development.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="project-conclusion">
+        <div class="container">
+            <h2>Conclusion</h2>
+            <p>The app is currently being refined and enhanced based on user feedback. Despite facing many challenges,
+                the MVP has been successfully launched and is being utilized to promote student engagement and
+                self-accountability. This project was a valuable learning experience and has given me the skills and
+                confidence to tackle similar projects in the future.</p>
+        </div>
+    </section>
+</div>

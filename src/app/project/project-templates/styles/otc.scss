@@ -1,0 +1,23 @@
+#project-component {
+    .ontrackchat {
+        #project-overview {
+            overflow: hidden;
+
+            figure {
+                padding: 1rem;
+
+                img {
+                    max-width: 44rem;
+                }
+
+                @media (min-width: 768px) {
+                    &.overview-image-1 {
+                        width: 65%;
+                        margin-left: 1rem;
+                        margin-top: -15rem;
+                    }
+                }
+            }
+        }
+    }
+}
