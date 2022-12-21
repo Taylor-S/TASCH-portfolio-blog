@@ -23,12 +23,6 @@
                 font-size: 0.75rem;
             }
         }
-
-        ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
     }
 
     #project-hero {
@@ -82,6 +76,13 @@
         margin: 0 auto;
         display: flex;
         justify-content: center;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
         p.bold {
             color: var(--color-accent-red);
             padding: 0.5rem 0 0.25rem;
