@@ -132,6 +132,18 @@
         display: none;
     }
 
+    .video-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        video {
+            border-radius: 15px;
+            margin: 0.5rem;
+        }
+    }
+
     @media (min-width: 500px) {
         section {
             padding: 8rem 0;
