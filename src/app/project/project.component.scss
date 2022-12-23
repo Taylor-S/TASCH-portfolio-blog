@@ -134,6 +134,7 @@
 
     .video-container {
         width: 100%;
+        padding: 1rem;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -141,6 +142,10 @@
         video {
             border-radius: 15px;
             margin: 0.5rem;
+            max-width: 100%;
+        }
+        video.portrait {
+            max-height: 40rem;
         }
     }
 
